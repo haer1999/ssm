@@ -18,6 +18,8 @@
     <!-- 静态资源默认servlet配置 -->
     <mvc:default-servlet-handler/>
 
+    <mvc:resources mapping="/static/**" location="/WEB-INF/static/"/>
+
     <!-- ========================================模板引擎 ViewResolver config ================================-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
